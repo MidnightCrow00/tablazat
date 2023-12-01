@@ -1,0 +1,114 @@
+main{
+    background-image: url(feladat_kutyas/design/hatter.jpg);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: calc( 4px + 1vw )
+}
+body {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+nav{
+    background-color: rgb(142, 184, 45);
+}
+nav ul{
+    display: grid;
+    grid-template-columns: 100px;
+    gap: 3px;
+    list-style-type: none;
+    padding-bottom: 10px;
+}
+nav li {
+    text-align: center;
+}
+nav li a{
+    color: rgb(255, 253, 253);
+    text-decoration: none;
+}
+nav li:hover a{
+    color: rgb(255, 255, 255);
+    background-color: rgb(77, 165, 216);
+}
+nav li:hover{
+    background-color: rgb(77, 165, 216);
+}
+article{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+main {
+    background-color: rgb(197, 228, 243);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    "h h"
+    "n ar"
+    "as as"
+    "f f";
+}
+header {
+    grid-area: h;
+}
+nav {
+    grid-area: n;
+}
+article {
+    grid-area: ar;
+}
+aside {
+    grid-area: as;
+}
+footer {
+    grid-area: f;
+}
+
+@media screen and (max-width:700px) {
+    body {
+        background-color: rgb(144, 174, 238);
+        width: 100%;
+        font-size: 3vw;
+      }
+    main {
+        
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: 
+        "h h"
+        "n ar"
+        "as as"
+        "f f";
+    } 
+    article{
+      
+        grid-template-columns: 1fr 1fr ;
+       
+    }
+}
+
+@media screen and (max-width:400px) {
+    body {
+        background-color: rgb(144, 174, 238);
+        width: 100%;
+        font-size: 5vw;
+      }
+      main {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "h"
+        "n"
+        "as"
+        "ar"
+        "f";
+      }
+      article{
+      
+        grid-template-columns: 1fr ;
+       
+    }
+}

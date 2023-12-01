@@ -1,0 +1,33 @@
+caption{
+    padding: 0px;
+    font-size: large;
+    
+}
+
+table{
+    border-collapse: collapse;
+    padding: 2px;
+    margin: auto;
+    width: 600px;
+    max-width: 90%;
+    
+}
+th{
+    border-right: 1px solid rgba(93, 145, 241, 0.301);
+    text-align: center;
+}
+td{
+    text-align: right;
+    border-top: 1px solid rgba(0, 0, 0, 0.432);
+}
+.sakk{
+    background-color: rgb(140, 200, 235);
+}
+.elso{
+    background-color: #d1d6d2;
+}
+
+.masodik{
+    background-color: #dfdfdf;
+}
+

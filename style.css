@@ -1,0 +1,52 @@
+nav{
+    background-color: rgb(142, 184, 45);
+}
+nav ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    list-style-type: none;
+}
+nav li {
+    text-align: center;
+}
+nav li a{
+    color: rgb(255, 253, 253);
+    text-decoration: none;
+}
+nav li:hover a{
+    color: rgb(255, 255, 255);
+    background-color: rgb(77, 165, 216);
+}
+nav li:hover{
+    background-color: rgb(77, 165, 216);
+}
+
+table{
+    border-collapse: collapse;
+    padding: 2px;
+    margin: auto;
+    width: 600px;
+    max-width: 80%;
+    
+}
+td{
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    text-align: center;
+    padding: 2px;
+}
+th{
+    background-color: white;
+}
+.elso{
+    background-color: #cae4d0;
+}
+
+.masodik{
+    background-color: #9eb19e;
+}
+footer{
+    background-color: rgb(142, 184, 45);
+    text-align: center;
+    color: white;
+}
